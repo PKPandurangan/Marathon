@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>	
-	<title>Marathon</title>
+ 	<title>Marathon</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="css/lightGallery.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main_styles.css">	
-
+	<link rel="stylesheet" href="css/medi_queries.css">
 
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
@@ -25,8 +26,8 @@
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">News</a></li>
-					<li><a href="#">FAQ ?</a></li>
-					<li><a href="#" class="search-btn" id="search-btn"></a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#" class="search-btn" id="search-btn"><i class="fa fa-search"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,17 +47,17 @@
 <!-- end header -->
 
 <!-- Map -->
-<div id="map">
+<div id="map" class="container-fluid">
 
 	<!-- route source destination -->
-	<div id="route-sd">
-		<div class="route-s">
+	<div id="route-sd" class="row">
+		<div class="route-s col-xs-6">
 			<h3>Chennai Marina Beach</h3>
-			<i>fi</i> <span>Start</span>
+			<i class="fa fa-map-marker"></i> <span>Start</span>
 		</div>
-		<div class="route-d">
+		<div class="route-d col-xs-6">
 			<h3>Chennai Besant Beach</h3>
-			<i>fi</i> <span>Finish</span>
+			<i class="fa fa-map-marker"></i> <span>Finish</span>
 		</div>
 	</div>
 	
@@ -69,24 +70,27 @@
 <!-- End Map -->
 
 <!-- Participate -->
-<div id="participate">
+<div id="participate" class="container">
 
 	<div class="section-header">
 		<h2>Participate</h2>
 		<p>Join us and realize your dreams</p>
 	</div>
 
-	<div id="price">
-		<div class="price-head">
-			<h3>Marathon</h3>
-			<p>Price</p>
-		</div>
-		<div class="price-tag">
-			<h3><span>INR</span>56,000</h3>
+	<div class="row">
+		<div id="price" class="col-sm-8 col-sm-offset-2">
+			<div class="price-head">
+				<h3>Marathon <span>Price</span></h3>
+				
+			</div>
+			<div class="price-tag">
+				<h3><span>INR&nbsp;</span>56,000</h3>
+			</div>
 		</div>
 	</div>
 
-	<div class="btn">
+
+	<div class="btn-si">
 		<a href="#">SIGN IN</a>
 	</div>
 
@@ -97,33 +101,35 @@
 <div id="winners">
 	
 	<div class="section-header">
-		<h2>Participate</h2>
-		<p>Join us and realize your dreams</p>
+		<h2>Past Winners</h2>
+		<p>Last year</p>
 	</div>
 
-	<div id="winner-board">
-		<div class="winner-slate">
-			<h3>1483</h3>
-			<p>People Finished</p>
-		</div>
-		<div class="winner-slate">
-			<h3>1483</h3>
-			<p>People Started</p>
-		</div>
-		<div class="winner-slate">
-			<h3>1483</h3>
-			<p>Total Mileage</p>
-		</div>
-		<div class="winner-slate">
-			<h3>1483</h3>
-			<p>People Started</p>
+	<div class="boardholder container" >
+		<div id="winner-board" class="row">
+			<div class="winner-slate col-md-3 col-sm-3 col-xs-12">
+				<h3>1483</h3>
+				<p>People<br>Finished</p>
+			</div> 
+			<div class="winner-slate alt-slate col-md-3 col-sm-3 col-xs-12" >
+				<h3>1483</h3>
+				<p>People<br>Started</p>
+			</div>
+			<div class="winner-slate col-md-3 col-sm-3 col-xs-12">
+				<h3>1483</h3>
+				<p>Total<br>Mileage</p>
+			</div>
+			<div class="winner-slate alt-slate col-md-3 col-sm-3 col-xs-12">
+				<h3>1483</h3>
+				<p>People<br>Started</p>
+			</div>
 		</div>
 	</div>
 </div>
 <!-- End Winners -->
 
 <!-- Gallery -->
-<div id="winners">
+<div id="gallery">
 	
 	<div class="section-header">
 		<h2>Gallery</h2>
@@ -132,9 +138,9 @@
 	<div id="carousel-gallery-holder">
 		<ul class="carousel gallery" id="light-gallery">
 			<li class="gallery-item" data-src="img/gallery/gallery_img_2.jpg" ><img src="img/gallery/thumb/gallery_img_1-512x512.jpg"></li>
-			<li class="gallery-item" data-src="img/gallery/gallery_img_3.jpg" ><img src="img/gallery/thumb/gallery_img_1-512x512.jpg"></li>
+			<li class="gallery-item" data-src="img/gallery/gallery_img_3.jpg" ><img src="img/gallery/thumb/gallery_img_2-512x512.jpg"></li>
 			<li class="gallery-item" data-src="img/gallery/gallery_img_2.jpg" ><img src="img/gallery/thumb/gallery_img_1-512x512.jpg"></li>
-			<li class="gallery-item" data-src="img/gallery/gallery_img_3.jpg" ><img src="img/gallery/thumb/gallery_img_1-512x512.jpg"></li>
+			<li class="gallery-item" data-src="img/gallery/gallery_img_3.jpg" ><img src="img/gallery/thumb/gallery_img_2-512x512.jpg"></li>
 			<li class="gallery-item" data-src="img/gallery/gallery_img_2.jpg" ><img src="img/gallery/thumb/gallery_img_1-512x512.jpg"></li>
 			<li class="gallery-item" data-src="img/gallery/gallery_img_3.jpg" ><img src="img/gallery/thumb/gallery_img_2-512x512.jpg"></li>
 			<li class="gallery-item" data-src="img/gallery/gallery_img_2.jpg" ><img src="img/gallery/thumb/gallery_img_2-512x512.jpg"></li>
@@ -146,20 +152,21 @@
 <!-- End Gallery -->
 
 <!-- Partners -->
-<div id="partners">
+<div id="partners" >
 	
 	<div class="section-header">
 		<h2>Our Partners</h2>
 		<p>Cooperate and support us in our mission</p>
 	</div>
 
-	<div id="partners-list">
-<!-- 		<ul>
-			<li class="partner"><img src="img/client_1.png" height="100" width="220" alt=""></li>
-			<li class="partner"><img src="img/client_2.png" height="100" width="220" alt=""></li>
-			<li class="partner"><img src="img/client_1.png" height="100" width="220" alt=""></li>
-			<li class="partner"><img src="img/client_2.png" height="100" width="220" alt=""></li>
-		</ul> -->
+	<div id="partners-list" class="container">
+		<ul class="row">
+			<li class="partner col-md-3 col-sm-6"><img src="img/partners/partner_1.jpg"  alt="partner"></li>
+			<li class="partner col-md-3 col-sm-6"><img src="img/partners/partner_2.jpg"  alt="partner"></li>
+			<li class="partner col-md-3 col-sm-6"><img src="img/partners/partner_1.jpg"  alt="partner"></li>
+			<li class="partner col-md-3 col-sm-6"><img src="img/partners/partner_2.jpg"  alt="partner"></li>
+			
+		</ul>
 	</div>	
 
 </div>

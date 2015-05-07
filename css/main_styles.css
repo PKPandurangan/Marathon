@@ -16,7 +16,7 @@
   font-family: 'Nunito';
   src: url('../fonts/nunito-bold-webfont.eot');
   src: url('../fonts/nunito-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nunito-bold-webfont.woff2') format('woff2'), url('../fonts/nunito-bold-webfont.woff') format('woff'), url('../fonts/nunito-bold-webfont.ttf') format('truetype'), url('../fonts/nunito-bold-webfont.svg#nunitobold') format('svg');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
@@ -31,8 +31,23 @@
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif; }
 
-/*  Header styles */
+/* Common styles */
 /* line 54, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+div.section-header {
+  text-align: center; }
+  /* line 58, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  div.section-header h2 {
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  /* line 63, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  div.section-header p {
+    font-size: 28px;
+    font-family: 'Droid Sans', sans-serif;
+    color: #a09c9c; }
+
+/*  Header styles */
+/* line 71, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #header {
   background: url('../img/main-bg.jpg');
   background-position: center center;
@@ -40,27 +55,27 @@ h1, h2, h3 {
   background-repeat: repeat-y;
   background-size: cover; }
 
-/* line 63, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 80, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #menu {
   height: 90px;
   background: #211f1f;
   padding-top: 30px; }
 
-/* line 68, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 85, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #logo {
   padding-left: 30px; }
 
-/* line 71, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 88, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #navigation {
   font-family: 'Arial', sans-serif; }
-  /* line 74, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 91, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #navigation ul {
     list-style: none;
     float: right; }
-  /* line 79, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 96, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #navigation li {
     display: inline-block; }
-  /* line 83, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 100, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #navigation a {
     font-weight: bold;
     display: block;
@@ -68,21 +83,20 @@ h1, h2, h3 {
     font-size: 16px;
     color: #fff; }
 
-/* line 92, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 109, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #hero {
   width: 420px;
-  height: 560px;
   padding-top: 110px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 120px; }
-  /* line 101, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  padding-bottom: 220px; }
+  /* line 117, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #hero h1 {
     font-size: 60px;
     color: #fff;
     text-align: center;
     font-weight: bold; }
-  /* line 108, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 124, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #hero .eventDate {
     font-style: italic;
     font-weight: norma;
@@ -90,47 +104,202 @@ h1, h2, h3 {
     color: #fff;
     letter-spacing: 2px; }
 
-/* line 117, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 133, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 .ticker {
   margin-top: 30px; }
 
-/* line 121, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 137, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #countDown {
   border: none;
   padding-top: 12px; }
-  /* line 126, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 142, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #countDown span {
     border: 0;
     padding: 0;
     margin: 0;
     background: #e6be00; }
-  /* line 133, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 149, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #countDown span.countdown-row {
     display: block; }
-  /* line 137, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 153, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #countDown span.countdown-section {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #968c8c;
     padding-top: 12px; }
-  /* line 142, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 158, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #countDown span.countdown-amount {
     font-size: 32px;
     font-weight: bold;
     color: #fff; }
-  /* line 149, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  /* line 165, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
   #countDown span.countdown-period {
     font-size: 17px;
     color: #737373;
     padding-bottom: 12px; }
 
+/* Map */
+/* line 179, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#route-sd h3 {
+  color: #fff;
+  font-size: 28px; }
+/* line 183, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#route-sd span {
+  font-size: 21px;
+  color: #565656; }
+/* line 187, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#route-sd i {
+  color: #565656;
+  font-size: 28px; }
+/* line 191, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#route-sd .route-s {
+  background: #e6be00; }
+/* line 195, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#route-sd .route-d {
+  background: #2a2829; }
+/* line 199, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#route-sd .route-s, #route-sd .route-d {
+  padding: 30px 50px;
+  text-align: center; }
+
+/* Participate */
+/* line 210, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#participate {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+/* line 214, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#price {
+  background: #333;
+  position: relative;
+  height: 200px;
+  margin-bottom: 92px;
+  margin-top: 70px; }
+  /* line 221, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #price .price-head {
+    position: absolute;
+    height: 50%;
+    top: 22%;
+    padding-left: 30px; }
+    /* line 227, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+    #price .price-head h3 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold; }
+      /* line 232, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+      #price .price-head h3 span {
+        color: #e6be00;
+        font-size: 30px;
+        display: block;
+        font-weight: normal; }
+  /* line 242, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #price .price-tag {
+    position: absolute;
+    background: #e6be00;
+    padding: 8px;
+    right: 0;
+    padding-left: 30px;
+    padding-right: 15px;
+    top: 25%;
+    height: 50%; }
+    /* line 252, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+    #price .price-tag h3 {
+      color: #fff;
+      font-size: 36px; }
+      /* line 256, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+      #price .price-tag h3 span {
+        color: #6a4f4f; }
+
+/* line 263, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+div.btn-si {
+  text-align: center; }
+  /* line 267, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  div.btn-si a {
+    padding: 12px 54px;
+    display: inline-block;
+    background: #03a9f4;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px; }
+
 /*  OWL CAROUSEL */
-/* line 159, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 283, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#gallery {
+  padding-top: 65px; }
+
+/* line 287, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#carousel-gallery-holder {
+  padding-top: 70px;
+  padding-bottom: 30px; }
+
+/* line 292, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#carousel-gallery-holder ul {
+  list-style: none; }
+
+/* line 295, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #carousel-gallery-holder .gallery-item img {
   display: block;
   width: 100%;
   height: auto; }
 
-/* line 165, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+/* line 301, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
 #carousel-gallery-holder .gallery-item {
-  margin: 3px; }
+  margin: 1px; }
+
+/* Winners */
+/* line 306, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#winners {
+  background: #faf7f7;
+  padding-top: 90px; }
+
+/* line 311, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#winner-board {
+  padding-top: 90px; }
+  /* line 314, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #winner-board h3 {
+    color: #fff;
+    font-size: 38px; }
+  /* line 319, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #winner-board p {
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal; }
+  /* line 324, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #winner-board .winner-slate {
+    background-color: #2a2829;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    /* line 330, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+    #winner-board .winner-slate p {
+      color: #e6be00; }
+  /* line 335, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #winner-board .winner-slate.alt-slate {
+    background-color: #e6be00; }
+    /* line 338, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+    #winner-board .winner-slate.alt-slate p {
+      color: #2a2829; }
+
+/* Partners */
+/* line 345, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#partners {
+  padding-top: 110px;
+  padding-bottom: 135px;
+  background: #333; }
+  /* line 350, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #partners h2 {
+    color: #fff; }
+
+/* line 355, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+#partners-list {
+  margin-top: 70px; }
+  /* line 359, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #partners-list ul {
+    list-style: none; }
+  /* line 363, /Applications/MAMP/htdocs/mara/scss/main_styles.scss */
+  #partners-list .partner {
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0 30px 0;
+    background: #fff;
+    border-right: 1px solid #ccc;
+    text-align: center; }
 
 /*# sourceMappingURL=main_styles.css.map */

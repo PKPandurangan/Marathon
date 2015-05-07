@@ -27,7 +27,7 @@
          url('../fonts/nunito-bold-webfont.woff') format('woff'),
          url('../fonts/nunito-bold-webfont.ttf') format('truetype'),
          url('../fonts/nunito-bold-webfont.svg#nunitobold') format('svg');
-    font-weight: normal;	
+    font-weight: 700;	
     font-style: normal;
 
 }
@@ -48,6 +48,23 @@
 /* Basic styles */
 h1, h2, h3 {
 	font-family: 'Nunito', sans-serif;
+}
+
+/* Common styles */
+div.section-header {
+
+  text-align: center;
+
+  h2 {
+    font-size:38px;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+  p {
+    font-size:28px;
+    font-family: 'Droid Sans', sans-serif;
+    color:#a09c9c;
+  }
 }
 
 /*  Header styles */
@@ -92,11 +109,10 @@ h1, h2, h3 {
 #hero {
   
   width:420px;
-  height:560px;
   padding-top:110px;
   margin: 0 auto;
   text-align:center;
-  padding-bottom: 120px;
+  padding-bottom: 220px;
   
   h1 {
     font-size:60px;
@@ -135,7 +151,7 @@ h1, h2, h3 {
     }
 
     span.countdown-section {
-        border-right:1px solid #ccc;
+        border-right:1px solid #968c8c;
         padding-top: 12px;
         }
 
@@ -153,9 +169,129 @@ h1, h2, h3 {
     }
 }
 
+/* Map */
+#map {
+
+}
+
+#route-sd {
+        
+    h3 {
+        color: #fff;
+        font-size: 28px;
+    }
+    span {
+        font-size: 21px;
+        color: #565656;
+    }
+    i {
+        color:#565656;
+        font-size: 28px;
+    }
+    .route-s {
+        background:#e6be00;
+    }
+
+    .route-d {
+        background: #2a2829;
+    }
+
+    .route-s, .route-d {
+        padding:30px 50px;
+        text-align: center;
+    }
+
+}
+
+
+
+/* Participate */
+
+#participate {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#price {
+    background:#333;
+    position:relative;
+    height:200px;
+    margin-bottom: 92px;
+    margin-top: 70px;
+    
+    .price-head {
+        position:absolute;
+        height:50%;
+        top:22%;
+        padding-left: 30px;
+
+        h3 {
+            color:#fff;
+            font-size:40px;
+            font-weight:bold;
+            
+            span {
+                color: #e6be00;
+                font-size:30px;
+                display: block;
+                font-weight: normal;
+
+            }
+        }
+    }
+
+    .price-tag {
+        position:absolute;
+        background: #e6be00;
+        padding:8px;
+        right:0;
+        padding-left: 30px;
+        padding-right: 15px;
+        top:25%;
+        height:50%;
+
+        h3 {
+            color:#fff;
+            font-size: 36px;
+            
+            span {
+                color:#6a4f4f;
+            }
+        }
+    }
+}
+
+div.btn-si{
+
+    text-align: center;
+
+    a {
+        padding: 12px 54px;
+        display: inline-block;
+        background: #03a9f4;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 18px;
+
+    }
+}
+
+
+
         
 /*  OWL CAROUSEL */
 
+#gallery {
+    padding-top: 65px;
+}
+
+#carousel-gallery-holder {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#carousel-gallery-holder ul{
+    list-style:none;
+}
 #carousel-gallery-holder .gallery-item img{
   display: block;
   width: 100%;
@@ -163,5 +299,72 @@ h1, h2, h3 {
 }
 
 #carousel-gallery-holder .gallery-item{
-  margin: 3px;
+  margin: 1px;
+}
+
+/* Winners */
+#winners {
+     background:#faf7f7;
+     padding-top: 90px;
+}
+
+#winner-board {
+    padding-top: 90px;
+
+    h3 {
+        color:#fff;
+        font-size:38px;
+    }
+
+    p {
+        font-size: 24px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: normal;
+    }
+    .winner-slate {
+        background-color: #2a2829;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        p {
+            color:#e6be00;
+
+        }
+    }
+    .winner-slate.alt-slate {
+        background-color: #e6be00;
+
+        p {
+            color:#2a2829;
+        }
+    }
+}
+
+/* Partners */
+#partners {
+    padding-top: 110px;
+    padding-bottom: 135px;
+    background:#333;
+
+    h2 {
+        color:#fff;
+    }
+}
+
+#partners-list {
+
+    margin-top:70px;
+
+    ul {
+        list-style: none;
+    }
+
+    .partner {
+        border-bottom:1px solid #ccc;
+        padding:30px 0 30px 0;
+        background:#fff;
+        border-right: 1px solid #ccc;
+        text-align: center;
+    }
 }
